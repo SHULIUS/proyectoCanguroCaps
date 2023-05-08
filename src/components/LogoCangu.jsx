@@ -4,7 +4,7 @@ import img from '../img/logocangu.png';
 export default function LogoCangu() {
   return (
     <div className='divLogo'>
-        <img className='logo' src={img} alt="" />
+      <img className='logo' src={img} alt="" />
     </div>
   )
 }

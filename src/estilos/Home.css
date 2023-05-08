@@ -1,0 +1,43 @@
+#iconoNavbar{
+    width: 80px;
+    height: 80px;
+
+}
+
+.navbar {
+    background-color: #d89014;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #FFD700;
+  }
+  
+  .navbar-brand:hover {
+    opacity: 0.8;
+  }
+  .navbar {
+    height: 80px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #LogOutButton {
+    margin-left: 500px;
+    background-color: #FFD700;
+    border-radius: 40px;
+    color: black;
+  }
+  #LogOutButton:hover {
+    color: #87836f; 
+  }
