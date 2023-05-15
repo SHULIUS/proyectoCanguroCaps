@@ -1,43 +1,115 @@
+/* Estilos para la barra de navegación */
 #iconoNavbar{
-    width: 80px;
-    height: 80px;
-
-}
-
-.navbar {
-    background-color: #d89014;
+  width: 80px;
+  height: 80px;
+  }
+  
+  .navbar {
+  background-color: #d89014;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Centra los elementos horizontales en la barra de navegación /
+  padding: 0 20px; / Agrega un espacio uniforme entre los elementos de la barra de navegación */
   }
   
   .navbar-nav .nav-link {
-    color: white;
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  padding: 10px; /* Agrega un espacio uniforme alrededor del texto en los enlaces de la barra de navegación /
+  transition: all 0.3s ease; / Agrega una transición suave a los cambios de color en los enlaces de la barra de navegación */
   }
   
   .navbar-nav .nav-link:hover {
-    color: #FFD700;
+  color: #FFD700;
+  background-color: rgba(255, 215, 0, 0.3); /* Agrega un fondo transparente cuando se pasa el cursor sobre los enlaces de la barra de navegación /
+  border-radius: 10px; / Agrega bordes redondeados al fondo cuando se pasa el cursor sobre los enlaces de la barra de navegación */
   }
   
   .navbar-brand:hover {
-    opacity: 0.8;
-  }
-  .navbar {
-    height: 80px;
+  opacity: 0.8;
+  transition: all 0.3s ease; /* Agrega una transición suave a los cambios de opacidad en el logotipo de la barra de navegación */
   }
   
-  .navbar-nav {
-    margin-left: auto;
-  }
-  
-  .nav-item {
-    margin-right: 20px;
-    font-size: 18px;
-  }
-
   #LogOutButton {
-    margin-left: 500px;
-    background-color: #FFD700;
-    border-radius: 40px;
-    color: black;
+  background-color: #FFD700;
+  border-radius: 40px;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: all 0.3s ease; /* Agrega una transición suave a los cambios de color en el botón de cerrar sesión */
   }
+  
   #LogOutButton:hover {
-    color: #87836f; 
+  color: #87836f;
+  background-color: #fff; /* Agrega un fondo blanco cuando se pasa el cursor sobre el botón de cerrar sesión /
+  transition: all 0.3s ease; / Agrega una transición suave a los cambios de color en el botón de cerrar sesión */
   }
+  
+  /* Estilos para la página de inicio */
+  .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .carousel-container {
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+  }
+  
+  .carousel-img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  
+  
+  .table {
+  margin-top: 50px;
+  width: 100%;
+  }
+  
+  th {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  }
+  
+  td {
+  font-size: 20px;
+  color: #555;
+  }
+  
+  .company-description {
+  margin-top: 50px;
+  text-align: center;
+  }
+  
+  .company-description h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  }
+  
+  .company-description p {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.5;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+  }
+  

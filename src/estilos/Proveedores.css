@@ -1,0 +1,46 @@
+.proveedores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .proveedores-form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .proveedores-form-row label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .proveedores-form-row input,
+  .proveedores-form-row select {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .proveedores-form-row input:focus,
+  .proveedores-form-row select:focus {
+    outline: none;
+    border-color: #0077cc;
+  }
+  
+  button[type='submit'] {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #005ea2;
+  }
+  

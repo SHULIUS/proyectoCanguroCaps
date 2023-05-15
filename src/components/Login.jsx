@@ -1,6 +1,6 @@
 import React from "react";
 import LogoCangu from './LogoCangu'
-import { auth } from '../firebaseAuth.js'
+import { auth } from '../firebase/firebaseAuth.js'
 
 export default function Login(props) {
 
@@ -8,7 +8,7 @@ export default function Login(props) {
 
   const iniciarSesion = (correo, password) => {
     auth.auth().signInWithEmailAndPassword(correo, password).then((usuarioFirebase) => {
-      console.log("sesion iniciada con:", usuarioFirebase.user);
+
       props.setUsuario(usuarioFirebase);
     })
   }
@@ -18,7 +18,7 @@ export default function Login(props) {
       auth().
       createUserWithEmailAndPassword(correo, password).
       then((usuarioFirebase) => {
-        console.log("Usuario creado", usuarioFirebase)
+
         props.setUsuario(usuarioFirebase)
       });
 
@@ -48,7 +48,7 @@ export default function Login(props) {
           <form onSubmit={SubmitHandler}>
             <h1 className="login-title">{isRegistrando ? "Registrate" : "Iniciar sesión"}</h1>
             <div className="input-container">
-              
+
               <input className="input-field" type="email" placeholder="Email" id="emailField" />
               <input className="input-field" type="password" placeholder="Password" id="passwordField" />
             </div>

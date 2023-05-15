@@ -1,6 +1,8 @@
 import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
 
+
+
 export const auth = firebase.initializeApp({
     "projectId": "authenticationcangucaps",
     "appId": "1:276114174658:web:2a34ae3789f96a95c6815b",
